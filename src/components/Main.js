@@ -9,7 +9,7 @@ const Main = () => {
     const [order,setOrder] = useState("a");
 
     useEffect(() => {
-        axios.get("https://randomuser.me/api/?results=20&nat=us").then((data) => {
+        axios.get("https://randomuser.me/api/?results=100&nat=us").then((data) => {
             setEmployees(data.data.results);
             setFilteredEmployees(data.data.results);
         });
